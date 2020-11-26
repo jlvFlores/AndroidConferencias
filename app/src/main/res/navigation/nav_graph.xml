@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/navHomeFragment"
-    tools:ignore="UnusedNavigation">
+    app:startDestination="@id/navHomeFragment">
 
     <fragment
         android:id="@+id/navHomeFragment"
@@ -53,16 +52,19 @@
         android:id="@+id/speakersDetailFragmentDialog"
         android:name="com.platzi.conf.ui.fragments.SpeakersDetailDialogFragment"
         android:label="SpeakerDetailFragmentDialog"
-        tools:layout="@layout/fragment_speakers_detail_dialog"/>
+        tools:layout="@layout/fragment_speakers_detail_dialog"
+        />
+
     <dialog
         android:id="@+id/scheduleDetailFragmentDialog"
-        android:name="com.platzi.conf.ui.fragments.SpeakersDetailDialogFragment"
-        android:label="SpeakerDetailFragmentDialog"
-        tools:layout="@layout/fragment_speakers_detail_dialog"/>
+        android:name="com.platzi.conf.ui.fragments.ScheduleDetailDialogFragment"
+        android:label="ScheduleDetailFragmentDialog"
+        tools:layout="@layout/fragment_schedule_detail_dialog"/>
+
     <dialog
         android:id="@+id/ubicationDetailFragmentDialog"
-        android:name="com.platzi.conf.ui.fragments.SpeakersDetailDialogFragment"
-        android:label="SpeakerDetailFragmentDialog"
-        tools:layout="@layout/fragment_speakers_detail_dialog"/>
+        android:name="com.platzi.conf.ui.fragments.UbicationDetailDialogFragment"
+        android:label="UbicationDetailFragmentDialog"
+        tools:layout="@layout/fragment_ubication_detail_dialog"/>
 
 </navigation>
