@@ -41,7 +41,7 @@ class ScheduleAdapter(val scheduleListener: ScheduleListener) : RecyclerView.Ada
         }
     }
 
-    fun updateDate(data: List<Conference>) {
+    fun updateData(data: List<Conference>) {
         listConference.clear()
         listConference.addAll(data)
         notifyDataSetChanged()
