@@ -36,6 +36,9 @@ class ScheduleAdapter(val scheduleListener: ScheduleListener) : RecyclerView.Ada
         holder.tvConferenceHour.text = hourFormat
         holder.tvConferenceAMPM.text = simpleDateFormatAMPM.format(conference.datetime).toUpperCase()
 
+        holder.itemView.setOnClickListener {
+            scheduleListener.onConferenceClicked(conference, position)
+        }
     }
 
     fun updateDate(data: List<Conference>) {
