@@ -7,5 +7,6 @@ class Conference {
     lateinit var descripcion: String
     lateinit var tag: String
     lateinit var datetime: Date
+    lateinit var speaker: String
 
 }
