@@ -14,7 +14,8 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/toolbarAlto"
-                android:src="@drawable/logo_platzi_conf"/>
+                android:src="@drawable/logo_platzi_conf"
+                />
         </Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -38,7 +39,5 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             app:menu="@menu/bnv_menu"/>
-
     </RelativeLayout>
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
